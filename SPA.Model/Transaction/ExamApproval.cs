@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SPA.Model.Transaction
+namespace SPA.Model
 {
     public class ExamApproval
     {

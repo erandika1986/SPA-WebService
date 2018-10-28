@@ -4,15 +4,13 @@ using System.Text;
 
 namespace SPA.Model
 {
-    public class StudentExamResult
+    public class ExamType
     {
-        public string StudentId { get; set; }
-        public long ExamId { get; set; }
-        public float Score { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
 
-        public virtual User Student { get; set; }
-        public virtual Exam Exam { get; set; }
-
+        public bool IsActive { get; set; }
         public DateTime CreatedOn { get; set; }
         public long CreatedById { get; set; }
         public DateTime UpdatedOn { get; set; }

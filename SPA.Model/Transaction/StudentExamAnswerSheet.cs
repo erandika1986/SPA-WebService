@@ -4,11 +4,12 @@ using System.Text;
 
 namespace SPA.Model
 {
-    public class StudentExamResult
+    public class StudentExamAnswerSheet
     {
+        public long Id { get; set; }
         public string StudentId { get; set; }
         public long ExamId { get; set; }
-        public float Score { get; set; }
+        public string AnswerSheetURL { get; set; }
 
         public virtual User Student { get; set; }
         public virtual Exam Exam { get; set; }
